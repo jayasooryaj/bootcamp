@@ -13,7 +13,7 @@ public class DependencyInjection {
     public class Engine {
         public void start() {...}
     }
-//    Here class car depends on clss engine . If there is a need to add a new type engine, it will
+//    Here class car depends on class engine . If there is a need to add a new type engine, it will
 //    need refactoring of class Car. Instead what can be done is we can use an interface for Engine
 
     public interface Engine {
