@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="">
+    <div>
+      <form name="myForm">
+        <label>Name</label><input type="text" ng-model="name" required/><br />
+        <label>Dob</label><input type="date" ng-model="dob" /><br />
+        <label>Gender</label>
+        <select ng-model="gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <br />
+        <label>Phone Number</label><input type="text" ng-model="phone" pattern=".{5,10}"/><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div ng-show="myForm.$submitted">
+      <p>Name: {{name}}</p>
+      <p>DOB: {{dob}}</p>
+      <p>Gender: {{gender}}</p>
+      <p>Phone Number: {{phone}}</p>
+    </div>
+  </body>
+</html>
