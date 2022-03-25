@@ -1,8 +1,6 @@
 package day7;
 
-
 public class Dry {
-
     public void person1()
     {
         System.out.println("Jayasoorya");
@@ -11,7 +9,6 @@ public class Dry {
 
     public void person2()
     {
-
         System.out.println("Janaki");
         bank();
     }
