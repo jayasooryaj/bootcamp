@@ -8,10 +8,20 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
 
-  <body data-ng-app="mainApp">
-    <first-directive>Click here for popup</first-directive>
-  </body>
+  <body data-ng-app="PopupDemo">
+    <div ng-controller="PopupDemoCont">
+      <first-directive ng-click="open()"></first-directive>
 
+      <!-- <h2 class="text-center">Angularjs-Popup</h2>
+      <button ng-click="open()" class="btn btn-warning">Simple Popup</button> -->
+    </div>
+  </body>
 </html>
