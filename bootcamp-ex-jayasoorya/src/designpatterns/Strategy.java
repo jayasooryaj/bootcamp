@@ -8,7 +8,7 @@ public class Strategy {
         System.out.println("=====  Before Promotion  =====");
         e1.doWork();
         e2.doWork();
-        
+
         e1.promote(new SeniorConsultant());
         e2.promote(new LeadConsultant());
 
