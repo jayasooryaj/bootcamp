@@ -11,7 +11,7 @@ public class Command {
 
         remote.setCommand(new TvOnCommand(tv));
         remote.pressButton();
-        
+
         remote.setCommand(new SetTopBoxOFFCommand(setTopBox));
         remote.pressButton();
 
